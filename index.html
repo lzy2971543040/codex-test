@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f5efe8" />
+  <meta name="description" content="《绝区零》代理人千夏角色展示页 — 妄想天使的丽都舞台。" />
+  <title>千夏 · 妄想天使 | 绝区零</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root{--paper:#f5efe8;--ink:#20211f;--muted:#76736c;--pink:#ff6c92;--mint:#a9e5d0;--mint-dark:#4b927e;--acid:#d4f36c;--line:rgba(32,33,31,.16);--mono:'DM Mono',monospace;--sans:'Manrope','Noto Sans SC',sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}.grain{position:fixed;inset:0;z-index:9;pointer-events:none;opacity:.11;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.2'/%3E%3C/svg%3E")}
+    .shell{max-width:1600px;margin:auto;padding:0 6.2vw;position:relative}.topbar{height:86px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:relative;z-index:5}.brand{display:flex;align-items:center;gap:12px;font-size:13px;font-weight:800;letter-spacing:.12em}.brand-mark{width:32px;height:32px;border:1px solid var(--ink);border-radius:50%;display:grid;place-items:center;font-size:12px;position:relative}.brand-mark:after{content:'';position:absolute;width:7px;height:7px;right:-2px;top:1px;background:var(--pink);border-radius:50%}.brand small{display:block;font:9px var(--mono);color:var(--muted);letter-spacing:.16em;margin-top:4px}.nav{display:flex;gap:38px;align-items:center;font:10px var(--mono);letter-spacing:.11em;text-transform:uppercase}.nav a{opacity:.66;transition:.2s}.nav a:hover,.nav a.active{opacity:1}.nav .pill{border:1px solid var(--ink);padding:11px 17px;border-radius:99px;opacity:1}.sound{border:0;background:none;display:flex;align-items:center;gap:9px;font:10px var(--mono);letter-spacing:.1em;cursor:pointer}.sound-bars{height:15px;display:flex;gap:2px;align-items:center}.sound-bars i{display:block;width:2px;height:5px;background:var(--pink)}.sound.playing i{animation:bars .65s ease-in-out infinite alternate}.sound.playing i:nth-child(2){animation-delay:.16s}.sound.playing i:nth-child(3){animation-delay:.3s}.sound.playing i:nth-child(4){animation-delay:.08s}@keyframes bars{to{height:14px}}
+    .hero{min-height:calc(100vh - 86px);min-height:min(870px,calc(100vh - 86px));position:relative;display:grid;grid-template-columns:43% 57%;align-items:center;padding:56px 0 86px}.hero:before{content:'';position:absolute;width:min(60vw,790px);height:min(60vw,790px);border:1px solid rgba(32,33,31,.12);border-radius:50%;left:30%;top:48%;transform:translateY(-50%);box-shadow:0 0 0 36px rgba(32,33,31,.018),0 0 0 90px rgba(32,33,31,.018)}.hero-copy{position:relative;z-index:2;padding:20px 0 0}.eyebrow{display:flex;align-items:center;gap:12px;font:10px var(--mono);letter-spacing:.2em;color:var(--mint-dark);text-transform:uppercase}.eyebrow:before{content:'';width:30px;height:1px;background:currentColor}.hero h1{font-size:clamp(76px,11vw,166px);line-height:.89;letter-spacing:-.1em;margin:34px 0 0;font-weight:900}.hero h1 span{display:block;font-size:.42em;letter-spacing:.02em;font-weight:500;color:var(--pink);margin:20px 0 0 9px}.jp{font-size:12px;letter-spacing:.22em;color:var(--muted);margin:26px 0 0 10px}.desc{max-width:340px;margin:30px 0 0 10px;font-size:13px;line-height:2;color:#55534e}.hero-actions{display:flex;align-items:center;gap:24px;margin:35px 0 0 10px}.primary{display:inline-flex;align-items:center;gap:24px;padding:15px 19px;background:var(--ink);color:var(--paper);font-size:11px;letter-spacing:.08em;border-radius:2px;transition:.25s}.primary:hover{background:var(--pink);transform:translateY(-2px)}.arrow{font-size:18px;line-height:10px}.textlink{font:10px var(--mono);letter-spacing:.1em;border-bottom:1px solid var(--ink);padding-bottom:4px}.hero-art{position:absolute;inset:0 0 0 32%;display:flex;align-items:center;justify-content:center;pointer-events:none}.art-disc{position:absolute;width:min(49vw,665px);aspect-ratio:1;border-radius:50%;background:var(--mint);left:50%;top:50%;transform:translate(-44%,-49%);overflow:hidden}.art-disc:before,.art-disc:after{content:'';position:absolute;border:1px solid rgba(32,33,31,.18);border-radius:50%;inset:7%}.art-disc:after{inset:14%}.character{position:absolute;z-index:1;height:min(91vh,820px);max-height:100%;width:auto;max-width:82%;object-fit:contain;object-position:center bottom;bottom:0;left:52%;transform:translateX(-43%);filter:drop-shadow(18px 22px 0 rgba(31,34,31,.08));animation:float 5s ease-in-out infinite;pointer-events:auto}@keyframes float{50%{transform:translate(-43%,-9px)}}.orbit{position:absolute;z-index:2;border:1px solid rgba(32,33,31,.25);border-radius:50%;width:min(55vw,730px);aspect-ratio:1;left:50%;top:50%;transform:translate(-44%,-49%) rotate(-21deg)}.orbit:before{content:'✳';position:absolute;left:14%;top:13%;color:var(--pink);font-size:23px}.orbit:after{content:'♡';position:absolute;right:12%;bottom:18%;color:var(--ink);font-size:25px}.sticker{position:absolute;z-index:3;display:grid;place-items:center;border-radius:50%;font:10px var(--mono);letter-spacing:.08em;text-align:center}.sticker-pink{width:94px;height:94px;background:var(--pink);color:white;right:5%;top:23%;transform:rotate(12deg)}.sticker-pink strong{font:900 22px var(--sans);display:block}.sticker-acid{width:72px;height:72px;background:var(--acid);left:16%;bottom:17%;transform:rotate(-13deg);font-size:9px}.tiny-label{position:absolute;right:3%;bottom:18%;z-index:3;font:9px var(--mono);letter-spacing:.1em;writing-mode:vertical-rl}.tiny-label:before{content:'';display:inline-block;width:1px;height:35px;background:var(--ink);margin:0 auto 12px}.side-index{position:absolute;left:0;bottom:35%;writing-mode:vertical-rl;font:9px var(--mono);letter-spacing:.23em;color:var(--muted)}.scroll{position:absolute;bottom:25px;left:50%;transform:translateX(-50%);font:9px var(--mono);letter-spacing:.22em;display:flex;align-items:center;gap:12px;color:var(--muted)}.scroll:after{content:'';height:34px;width:1px;background:var(--pink);position:absolute;left:50%;top:24px;animation:scroll 1.4s ease-in-out infinite}@keyframes scroll{50%{transform:scaleY(.45);transform-origin:top}}
+    .profile{background:#242723;color:var(--paper);padding:110px 0 120px;position:relative;overflow:hidden}.profile:after{content:'CHINATSU';position:absolute;right:-4vw;bottom:-6vw;font-size:19vw;font-weight:900;letter-spacing:-.1em;color:rgba(255,255,255,.025);line-height:1}.profile-grid{display:grid;grid-template-columns:1fr 1fr;gap:9vw;position:relative;z-index:1}.profile .eyebrow{color:var(--mint)}.profile h2{font-size:clamp(36px,5vw,69px);line-height:1.14;letter-spacing:-.06em;margin:28px 0 22px}.profile h2 em{font-style:normal;color:var(--pink)}.profile p{max-width:430px;color:#c4c2bb;font-size:13px;line-height:2.1}.meta{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:44px;border-top:1px solid rgba(255,255,255,.18)}.meta div{padding:19px 0;border-bottom:1px solid rgba(255,255,255,.18)}.meta span{display:block;font:9px var(--mono);letter-spacing:.16em;color:#aaa99f;text-transform:uppercase;margin-bottom:9px}.meta strong{font-size:14px;font-weight:600}.quote{align-self:center;border-left:1px solid var(--pink);padding:10px 0 10px 42px;max-width:440px}.quote .mark{font-size:62px;line-height:.7;color:var(--pink);font-family:Georgia,serif}.quote blockquote{font-size:clamp(20px,2.5vw,34px);line-height:1.5;margin:25px 0 28px;letter-spacing:-.03em}.quote small{font:9px var(--mono);letter-spacing:.15em;color:#aaa99f}
+    .footer{padding:30px 6.2vw;display:flex;justify-content:space-between;align-items:center;gap:16px;font:9px var(--mono);letter-spacing:.1em;color:var(--muted)}.footer a{border-bottom:1px solid currentColor}.mobile-menu{display:none}
+    @media(max-width:900px){.shell{padding:0 5vw}.topbar{height:70px}.nav{gap:20px}.hero{min-height:850px;display:block;padding-top:54px}.hero-copy{padding-top:0}.hero h1{font-size:clamp(88px,16vw,144px);margin-top:28px}.hero-art{inset:23% -8% 0 10%;align-items:flex-end}.art-disc{width:min(78vw,620px);left:53%;top:58%}.orbit{width:min(88vw,690px);top:58%;left:53%}.character{height:72%;max-width:90%;left:56%;transform:translateX(-45%)}@keyframes float{50%{transform:translate(-45%,-8px)}}.sticker-pink{right:1%;top:28%}.sticker-acid{left:8%;bottom:15%}.tiny-label{right:0;bottom:24%}.hero-copy .desc{max-width:300px}.profile-grid{gap:6vw}}
+    @media(max-width:620px){.topbar{height:64px}.brand{font-size:11px}.brand-mark{width:28px;height:28px}.nav a:not(.pill){display:none}.nav{gap:14px}.nav .pill{padding:9px 13px;font-size:9px}.sound{font-size:0;gap:0}.hero{min-height:820px;padding-top:48px}.hero h1{font-size:clamp(84px,22vw,126px)}.hero h1 span{font-size:.36em;margin-top:16px}.jp{font-size:10px;margin-top:19px}.desc{font-size:12px;max-width:280px;margin-top:19px}.hero-actions{margin-top:22px;gap:18px}.primary{padding:13px 15px;gap:16px}.hero-art{inset:40% -14% 0 -2%}.art-disc{width:100vw;max-width:520px;top:58%}.orbit{width:110vw;top:58%}.character{height:67%;max-width:100%;left:58%}.sticker-pink{width:74px;height:74px;top:31%;right:5%;font-size:8px}.sticker-pink strong{font-size:18px}.sticker-acid{width:59px;height:59px;left:8%;bottom:12%;font-size:8px}.side-index{left:-3%;bottom:22%;font-size:8px}.tiny-label{font-size:7px;right:1%;bottom:16%}.scroll{bottom:25px}.profile{padding:76px 0 82px}.profile-grid{grid-template-columns:1fr;gap:48px}.profile h2{font-size:39px}.quote{padding-left:25px}.quote blockquote{font-size:23px}.meta{margin-top:32px}.footer{padding:22px 5vw;flex-wrap:wrap;font-size:8px}.footer span:first-child{width:100%}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+      /* Spacing pass: give the copy and key art distinct breathing room. */
+    .hero{display:block}
+    .hero-copy{width:min(42%,500px);max-width:500px;margin-left:clamp(24px,3vw,48px);padding-top:0}
+    .hero h1{font-size:clamp(72px,9vw,126px);line-height:.98;letter-spacing:-.075em;margin-top:28px}
+    .hero h1 span{margin-top:22px}
+    .jp{margin-top:28px}
+    .desc{margin-top:24px;line-height:2.1}
+    .hero-actions{margin-top:32px;gap:28px}
+    .hero-art{left:40%}
+    .art-disc{width:min(46vw,620px)}
+    .orbit{width:min(52vw,690px)}
+    .character{height:min(88vh,790px);left:54%;transform:translateX(-40%)}
+    @keyframes float{50%{transform:translate(-40%,-9px)}}
+    @media(max-width:900px){
+      .hero-copy{width:48%;max-width:430px;margin-left:20px}
+      .hero h1{font-size:clamp(76px,10vw,112px)}
+      .hero-art{left:42%}
+      .art-disc{width:min(53vw,500px)}
+      .orbit{width:min(61vw,580px)}
+      .character{height:74%;left:57%;transform:translateX(-42%)}
+      @keyframes float{50%{transform:translate(-42%,-8px)}}
+    }
+    @media(max-width:620px){
+      .hero{display:block;min-height:850px}
+      .hero-copy{width:100%;max-width:390px;margin-left:4px;position:relative;z-index:4}
+      .hero h1{font-size:clamp(78px,20vw,112px);line-height:.96;margin-top:23px}
+      .hero h1 span{margin-top:16px}
+      .jp{margin-top:19px}
+      .desc{margin-top:17px;line-height:1.9}
+      .hero-actions{margin-top:20px;gap:18px}
+      .hero-art{inset:46% -10% 0 5%}
+      .art-disc{width:min(94vw,460px);top:55%}
+      .orbit{width:min(106vw,520px);top:55%}
+      .character{height:66%;max-width:98%;left:58%;transform:translateX(-43%)}
+      @keyframes float{50%{transform:translate(-43%,-8px)}}
+    }
+  </style>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="shell topbar">
+    <a class="brand" href="#top" aria-label="回到首页"><span class="brand-mark">ZZZ</span><span>NEW ERIDU<small>AGENT ARCHIVE / 026</small></span></a>
+    <nav class="nav" aria-label="主导航"><a class="active" href="#top">首页 / Home</a><a href="#profile">角色档案</a><a class="pill" href="https://zzz.mihoyo.com/main/" target="_blank" rel="noreferrer">进入新艾利都 ↗</a></nav>
+    <button class="sound" id="sound" aria-label="播放氛围音"><span class="sound-bars"><i></i><i></i><i></i><i></i></span><span id="soundText">SOUND OFF</span></button>
+  </header>
+  <main id="top">
+    <section class="shell hero" aria-labelledby="hero-title">
+      <div class="side-index">NO. 026 — DREAM IN FOUR / FOUR</div>
+      <div class="hero-copy">
+        <div class="eyebrow">ANGELS OF DELUSION · AGENT 01</div>
+        <h1 id="hero-title">千夏<span>Chinatsu</span></h1>
+        <div class="jp">新艾利都 · 妄想天使</div>
+        <p class="desc">把灵感调到最大音量。<br>今天的丽都，也要有你啦啦啦啦啦的节拍。</p>
+        <div class="hero-actions"><a class="primary" href="#profile">查看角色档案 <span class="arrow">↘</span></a><a class="textlink" href="#profile">MEET THE AGENT</a></div>
+      </div>
+      <div class="hero-art" aria-label="千夏角色立绘">
+        <div class="art-disc"></div><div class="orbit"></div>
+        <img class="character" src="https://img.dennlog.com/zenless/characters/Sunna/default.webp" alt="《绝区零》千夏角色立绘" fetchpriority="high" />
+        <div class="sticker sticker-pink"><span>MAKE SOME<br><strong>NOISE!</strong></span></div><div class="sticker sticker-acid">DREAM<br>ON ✳</div>
+      </div>
+      <div class="tiny-label">THE CITY IS YOUR STAGE</div>
+      <a class="scroll" href="#profile">SCROLL TO EXPLORE</a>
+    </section>
+    <section class="profile" id="profile">
+      <div class="shell profile-grid">
+        <div>
+          <div class="eyebrow">AGENT PROFILE / 026</div>
+          <h2>小小的声音，<br><em>也能唱进整座城市。</em></h2>
+          <p>新锐编曲师千夏，妄想天使的一员。扩音器里装着旋律，也装着她一点点积攒起来的勇气。下一首歌，想和你一起完成。</p>
+          <div class="meta"><div><span>FACTION</span><strong>妄想天使</strong></div><div><span>ATTRIBUTE</span><strong>物理 · 支援</strong></div><div><span>ROLE</span><strong>编曲师 / 舞台新人</strong></div><div><span>FREQUENCY</span><strong>四三拍遐想</strong></div></div>
+        </div>
+        <div class="quote"><div class="mark">“</div><blockquote>我、我会努力的！<br>请听听看……这次的旋律。</blockquote><small>CHINATSU · NEW ERIDU RECORDING</small></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><span>ZENLESS ZONE ZERO · FAN-MADE CHARACTER LANDING PAGE</span><span>ARTWORK VIA <a href="https://www.dennlog.com/ja/games/zenless/characters/Sunna" target="_blank" rel="noreferrer">DENNLOG</a></span><a href="#top">BACK TO TOP ↑</a></footer>
+  <script>
+    const soundButton = document.querySelector('#sound');
+    const soundText = document.querySelector('#soundText');
+    let audioContext;
+    let noteTimer;
+    let noteIndex = 0;
+    const notes = [523.25, 659.25, 783.99, 659.25, 587.33, 698.46, 880, 698.46];
+    function playNote() {
+      if (!audioContext) return;
+      const oscillator = audioContext.createOscillator();
+      const gain = audioContext.createGain();
+      oscillator.type = 'sine';
+      oscillator.frequency.value = notes[noteIndex++ % notes.length];
+      gain.gain.setValueAtTime(0.0001, audioContext.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.035, audioContext.currentTime + 0.025);
+      gain.gain.exponentialRampToValueAtTime(0.0001, audioContext.currentTime + 0.38);
+      oscillator.connect(gain).connect(audioContext.destination);
+      oscillator.start();
+      oscillator.stop(audioContext.currentTime + 0.4);
+    }
+    soundButton.addEventListener('click', async () => {
+      const playing = soundButton.classList.toggle('playing');
+      soundText.textContent = playing ? 'SOUND ON' : 'SOUND OFF';
+      soundButton.setAttribute('aria-label', playing ? '关闭氛围音' : '播放氛围音');
+      if (playing) {
+        audioContext ??= new AudioContext();
+        await audioContext.resume();
+        playNote();
+        noteTimer = window.setInterval(playNote, 420);
+      } else {
+        window.clearInterval(noteTimer);
+        await audioContext?.suspend();
+      }
+    });
+  </script>
+</body>
+</html>
+
+
